@@ -1,0 +1,18 @@
+<!-- File: src/resources/logback.xml -->
+<configuration>
+
+  <!-- This defines an "appender" that sends log output to the console. -->
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <!-- This pattern defines the format of each log message. -->
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- This sets the "root" logger level to WARN. -->
+  <!-- It means only WARN and ERROR messages will be shown. -->
+  <root level="WARN">
+    <appender-ref ref="STDOUT" />
+  </root>
+
+</configuration>

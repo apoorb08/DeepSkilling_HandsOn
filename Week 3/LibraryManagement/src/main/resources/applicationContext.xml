@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 1. Define the BookRepository bean -->
+    <!-- Spring will create an instance of the BookRepository class -->
+    <!-- and name it "bookRepository". -->
+    <bean id="bookRepository" class="com.library.repository.BookRepository">
+    </bean>
+
+    <!-- 2. Define the BookService bean -->
+    <!-- Spring will create an instance of the BookService class -->
+    <!-- and name it "bookService". -->
+    <bean id="bookService" class="com.library.service.BookService">
+        <!-- Use "setter injection" to wire the beans together. -->
+        <!-- Spring will call the setBookRepository() method on the BookService -->
+        <!-- and pass in a reference to the "bookRepository" bean defined above. -->
+        <property name="bookRepository" ref="bookRepository" />
+    </bean>
+
+</beans>
