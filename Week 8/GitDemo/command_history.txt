@@ -1,0 +1,89 @@
+    1  ls
+    2  ls -a
+    3  git log
+    4  git add
+    5  git add .
+    6  git commit -m "updated1"
+    7  git push
+    8  git status
+    9  git --version
+   10  git config --global user.name "Apoorb Raj"
+   11  git config --global user.email "apoorb08@gmail.com"
+   12  git config --list
+   13  git config --global core.editor "notepad++ -multiInst -notebbar -nosession -noPlugin"
+   14  git config --global -e
+   15  mkdir GitDemo
+   16  cd GitDemo
+   17  git init
+   18  echo "Welcome to Git" > welcome.txt
+   19  git status
+   20  git add welcome.txt
+   21  git commit
+   22  git push origin master
+   23  cd GitDemo
+   24  cd ~
+   25  ls
+   26  cd GitDemo
+   27  git push origin master
+   28  touch application.log
+   29  mkdir log
+   30  git status
+   31  notepad++ gitignore
+   32  notepad++ .gitignore
+   33  notepad .gitignore
+   34  git status
+   35  git add .gitignore
+   36  git commit -m "Add .gitignore to ignore log files"
+   37  git status
+   38  git branch GitNewBranch
+   39  git branch -a
+   40  git checcout GitNewBranch
+   41  git checkout GitNewBranch
+   42  echo "This is a new feature file." > feature.txt
+   43  git add feature.txt
+   44  git commit -m "Add new feature file to GitNewBranch"
+   45  git status
+   46  git checkout master
+   47  git diff GitNewBranch
+   48  git merge GitNewBranch
+   49  git log --oneline --graph --decorate
+   50  git branch -d GitNewBranch
+   51  git status
+   52  git barnch
+   53  git checkout master
+   54  git status
+   55  git checkout -b GitWork
+   56  echo "<xml><message>Inital content from branch</message></xml>" > hello.xml
+   57  echo "<xml><message>Updated content from the GitWork branch</message></xml>" > hello.xml
+   58  git status
+   59  git add hello.xml
+   60  git commit -m "Update hello.xml on GitWork"
+   61  git checkout  master
+   62  echo "<xml><message>Content from the master branch</message></xml>" > hello.xml
+   63  git add hello.xml
+   64  git commit -m "Add hello.xml om master"
+   65  git log --oneline --graph --decorate --all
+   66  git diff GitWork
+   67  git merge GitWork
+   68  cat hello.xml
+   69  git mergetool
+   70  cd GitDemo
+   71  git status
+   72  git commit
+   73  git status
+   74  echo "*.orig" >> .gitignore
+   75  git add .gitignore
+   76  git commit -m "Ignore merge tool backup files"
+   77  git branch
+   78  git branch -d GitWork
+   79  git log --oneline --graph --decorate
+   80  git checkout master
+   81  git status
+   82  git commit
+   83  git status
+   84  git checkout master
+   85  git status
+   86  git branch -a
+   87  git pull origin master
+   88  git push origin master
+   89  history > command_history.txt
